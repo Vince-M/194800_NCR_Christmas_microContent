@@ -43,15 +43,19 @@
           color: #2d2d2d;
           margin: 0 !important;
         }
+        h3.toyHeader {
+          padding: 24px 24px 0 0;
+          margin: 0 !important;
+        }
         .ctaHead {
           color: #2b2b2b !important;
         }
         p,
         p.intro {
           font-size: 16px;
-          line-height: 20px;
+          line-height: 24px;
           color: #2b2b2b; 
-          margin-top: 10px;
+          margin-top: 0;
         }
         .highLight {
           color: #007476;
@@ -112,7 +116,7 @@
         } */
 
         .content {
-          line-height: 20px;
+          line-height: 24px;
           font-size: 16px;
         }
         .footer {
@@ -120,7 +124,7 @@
           color: #fafafa;
         }
         .column-wrapper {
-          padding: 0 0 30px 0;
+          padding: 0;
           font-size: 0;
           text-align: center;
         }
@@ -137,16 +141,22 @@
             max-width: 293px;
         }
         .column-one-third {
-            max-width: 200px;
+            max-width: 224px;
         }
         .column-two-third {
-            max-width: 400px !important;
+            max-width: 376px !important;
         }
         .padding {
-            padding: 20px;
+            padding: 24px;
+        }
+        .padding-rtl {
+          padding: 0 0 0 24px;
+        }
+        .padding-ltr {
+          padding: 0 24px 0 0;
         }
         .footerLink {
-          padding: 0 20px 0 20px !important;
+          padding: 0 24px 0 24px !important;
         }
 
         u + .body .gmail-blend-screen {
@@ -194,7 +204,20 @@
         @media screen and (max-width: 599.98px) {
 
           h3 {
-            margin: 36px 0 20px 0 !important;
+            margin: 36px 0 24px 0 !important;
+          }
+          .toyHeader {
+            padding: 0 !important;
+          }
+          h3.toyHeader {
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+          .second {
+            padding: 0 0 0 24px !important
+          }
+          .revPadding {
+            padding: 0 24px 0 24px !important;
           }
           .recipeBanner {
             padding-left: 15px !important;
@@ -223,7 +246,7 @@
             width: inherit !important;
           }
           .column-wrapper {
-            padding: 15px 0 0 0 !important;
+            padding: 16px 0 16px 0 !important;
           }
           .column-wrapper.fluid-hybrid .column,
           .column-wrapper.fluid-hybrid .column img {
@@ -231,11 +254,11 @@
             width: 100% !important;
           }
           /* .column.column-two-third {
-            margin-bottom: 20px !important;
+            margin-bottom: 24px !important;
           } */
           .siteBranding {
             width: 100% !important;
-            padding: 0 20px 0 10px !important;
+            padding: 0 24px 0 10px !important;
           }
           .productPrice {
             font-size: 28px !important;
@@ -243,10 +266,13 @@
           a.signUp {
             font-size: 26px !important;
           }
+          .connect {
+            font-size: 32px !important;
+          }
           .footerMenu {
             display: block;
             padding: 0 !important;
-            margin: 0 0 20px 0 !important
+            margin: 0 0 24px 0 !important
           }
         }
 
@@ -444,7 +470,7 @@
           <td  align="center" style="padding: 0; ">
 
             <!--[if mso]>
-              <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+              <table width="600" align="center" style="border-spacing: 0; text-align:" role="presentation">
                 <tr>
                   <td width="600" valign="top" style="padding: 0; width: 100%; max-width: 600px;"
             <![endif]-->
@@ -452,9 +478,9 @@
             <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0; background-color: #CCE3DE; width: 100%; max-width: 600px;" role="presentation">
 
               <tr>
-                <td style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 28px; font-weight: 500; text-align: center; padding: 40px 48px 32px; margin: 0;">
+                <td class="header" style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 28px; font-weight: 500; text-align: center; padding: 40px 24px 32px; margin: 0;">
                   <h1 style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 46px; font-weight: 7500; color: #00798F;">Playtime that helps them Learn and Grow</h1>
-                  <p class="intro" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 500; color: #007576; text-align: center; margin: 32px 0 0;">The Northern / NorthMart 2025 Toys & Games Catalogue</span> is finally here, and it's loaded with fun, wonder, and the perfect picks for every age.</p>
+                  <p class="intro" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 500; color: #007576; text-align: center; margin: 32px 0 0;">The Northern / NorthMart 2025 Toys & Games Catalogue is finally here, and it's loaded with fun, wonder, and the perfect picks for every age.</p>
                 </td>
               </tr>
 
@@ -556,272 +582,222 @@
         <!-- LIFESTYLE SECTION END -->
 
         <!-- BODY TEXT SECTION START -->
-        <!-- START TWO THIRDS COLUMNS -->
-            <tr>
-              <td style="padding: 0"> <!-- Padding Vertically -->
-                  <table width="100%" style="border-spacing: 0; background-color: #CCE3DE;" role="presentation"> <!-- Standard Table -->
+          <!-- START TWO THIRDS COLUMNS -->
+              <tr>
+                <td style="padding: 0">
+                    <table width="100%" style="border-spacing: 0; background-color: #CCE3DE;" role="presentation"> <!-- Standard Table -->
 
-                    <tr>
-                        <td class="column-wrapper" style="padding: 32px 0; font-size: 0; text-align: left;"> <!-- Column Wrapper (media query padding) -->
+                    <!--[if mso]>
+                      <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                          <td width="600" valign="top" style="padding: 0;"
+                    <![endif]-->
 
-                          <!--[if mso]>
-                              <table width="100%" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                              <td width="200" valign="middle" style="padding: 0;">
-                          <![endif]-->
+                      <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+                        <tr>
+                            <td style="padding: 0;">
+                              <table width="100%" style="border-spacing:0;" role="presentation">
 
-                          <table class="column column-one-third" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 200px; display: inline-block;" role="presentation"> <!-- Column (300px width) -->
-                              <tr>
-                                <td class="padding" style="padding: 20px;"> <!-- Padding (around content) -->
+                                  <tr>
+                                    <td class="column-wrapper fluid-hybrid" style="padding: 24px 0 0 0; font-size: 0; background-color: #CCE3DE; text-align: center;">
 
-                                    <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> <!-- Content Styling -->
-                                      <tr>
-                                          <td style="">
-                                            <a href="https://example.com/12" target="_blank">
-                                                <img src="img/kids_product_v_tech_368x224.jpg" alt="" class="one-third-col-img" width="184" style="max-width: 184px; border: 0; box-shadow: inset 0 0 0 2px #00798f;">
-                                            </a>
+                                        <!--[if mso]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="224" valign="middle" style="background-color: #CCE3DE; padding: 0;">
+                                        <![endif]-->
+
+                                        <table class="column column-one-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 224px; display: inline-block; background-color: #CCE3DE; color: #fafafa; padding: 24px 0 0 0;" role="presentation">
+                                          <tr>
+                                              <td style="padding: 0 16px 0 16px; background-color: #CCE3DE;">
+                                                <a href="https://www.northmart.ca/toys-games/kids"><img src="img/kids_product_v_tech_368x224.jpg" width="184" alt="VTech Kidi Superstar Jr. DJ Mixer" title="VTech Kidi Superstar Jr. DJ Mixer" style="max-width: 184px;"></a>
+                                              </td>
+                                          </tr>
+                                        </table>
+
+                                        <!--[if mso]>
+                                          </td><td width="376" valign="middle" style="padding: 0;">
+                                        <![endif]-->
+
+                                        <table class="column column-two-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 376px; display: inline-block; background-color: #CCE3DE; color: #2d2d2d; padding: 24px 24px 0 0;" role="presentation">
+                                          <tr>
+                                              <td class="padding-ltr second" style="background-color: #CCE3DE; text-align: left;">
+                                                <h3 class="toyHeader" style="font-size: 20px; line-height: 28px; font-weight: 700; background-color: #CCE3DE; color: #00798F; padding: 0;">VTech Kidi Superstar Jr. DJ Mixer</h3>
+                                                <p style="font-size: 16px; line-height: 24px; background-color: #CCE3DE; color: #2d2d2d; font-weight: 500; padding: 0 0 8px 0; margin: 0;">Sing duets, dance, and laugh together as kids perform their favourite songs. This interactive toy turns family moments into joyful concerts filled with music and confidence.</p>
+                                                <a style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 500; color: #00798F;" href="https://www.northmart.ca/toys-games/kids" target="_blank">Explore all toys for Little Hands &#10095;</a>
+                                              </td>
+                                          </tr>
+                                        </table>
+
+                                        <!--[if mso]>
                                           </td>
-                                      </tr>
-                                    </table>
+                                          </tr>
+                                          </table>
+                                        <![endif]-->
 
-                                </td>
-                              </tr>
-                          </table>
+                                    </td>
+                                  </tr>
 
-                          <!--[if mso]>
-                              </td><td width="400" valign="middle" style="padding: 0;">
-                          <![endif]-->
-
-                          <table class="column column-two-third" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 400px; display: inline-block;" role="presentation"> <!-- Column (400px width) -->
-                              <tr>
-                                <td class="padding" style="padding: 0px;"> <!-- Padding (around content) -->
-
-                                    <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> <!-- Content Styling -->
-                                      <tr>
-                                          <td style="vertical-align: middle; padding: 0 10px;">
-                                            <div class="darkmode-transparent gmail-blend-screen">
-                                                <div class="darkmode-transparent gmail-blend-difference">
-                                                  <h3 style="font-size: 16px; line-height: 20px; color: #2d2d2d; letter-spacing: .2px; font-weight: 300; margin: 0;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 28px; font-weight: 700; color: #00798F; ">VTech Kidi Superstar Jr. DJ Mixer</span><br />
-                                                    Sing duets, dance, and laugh together as kids perform their favourite songs. This interactive toy turns family moments into joyful concerts filled with music and confidence.</h3>
-                                                </div>
-                                            </div>
-                                          </td>
-                                      </tr>
-                                    </table>
-
-                                </td>
-                              </tr>
-                          </table>
-
-                          <!--[if mso]>
-                              </td>
-                              </tr>
                               </table>
-                          <![endif]-->
+                            </td>
+                        </tr>
+                      <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+
+                      <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+                        <tr>
+                            <td style="padding: 0;">
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+
+                                  <tr>
+                                    <td class="column-wrapper fluid-hybrid" style="padding: 24px 0 0 0; font-size: 0; background-color: #CCE3DE; text-align: center;" dir="rtl">
+
+                                        <!--[if mso]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="224" valign="middle" style="background-color: #CCE3DE; padding: 0;">
+                                        <![endif]-->
+
+                                        <table class="column column-one-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 224px; display: inline-block; background-color: #CCE3DE; color: #fafafa;" role="presentation">
+                                          <tr>
+                                              <td class="padding" style="padding: 0 24px 0 16px; background-color: #CCE3DE;">
+                                                <a href="https://example.com"><img src="img/kids_product_rhino-building_368x224.jpg" width="184" alt="Rhino Construction Building Machines" title="Rhino Construction Building Machines" style="max-width: 184px;"></a>
+                                              </td>
+                                          </tr>
+                                        </table>
+
+                                        <!--[if mso]>
+                                          </td><td width="376" valign="middle" style="padding: 0;" dir="rtl">
+                                        <![endif]-->
+
+                                        <table class="column column-two-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 376px; display: inline-block; background-color: #CCE3DE; color: #2d2d2d; padding: 24px 24px 0 0;" role="presentation" dir="rtl">
+                                          <tr>
+                                              <td class="padding-rtl second" style="background-color: #CCE3DE; text-align: left;">
+                                                <h3 class="toyHeader" style="font-size: 20px; line-height: 28px; font-weight: 700; background-color: #CCE3DE; color: #00798F; padding: 24px 24px 0 0;">Rhino Construction Building Machines</h3>
+                                                <p style="font-size: 16px; line-height: 24px; background-color: #CCE3DE; color: #2d2d2d; font-weight: 500; padding: 0 0 8px 0; margin: 0;">Hands-on fun that builds skills! These bright tractors strengthen fine motor abilities, teach cause and effect, and spark a love for creative problem-solving through constructive play.</p>
+                                                <a style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 500; color: #00798F;" href="https://www.northmart.ca/toys-games/kids" target="_blank">Explore all toys for Little Hands &#10095;</a>
+                                              </td>
+                                          </tr>
+                                        </table>
+
+                                        <!--[if mso]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                        <![endif]-->
+
+                                    </td>
+                                  </tr>
+
+                              </table>
+                            </td>
+                        </tr>
+                      <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+
+                      <!-- TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+                        <tr>
+                            <td style="padding: 0;">
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+
+                                  <tr>
+                                    <td class="column-wrapper fluid-hybrid" style="padding: 48px 0 40px 00; font-size: 0; background-color: #CCE3DE; text-align: center;">
+
+                                        <!--[if mso]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="224" valign="middle" style="padding: 48px 0 40px 00;">
+                                        <![endif]-->
+
+                                        <table class="column column-one-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 224px; display: inline-block; background-color: #CCE3DE; color: #fafafa;" role="presentation">
+                                          <tr>
+                                              <td class="padding" style="padding: 0 16px 0 24px; background-color: #CCE3DE;">
+                                                <a href="https://example.com"><img src="img/kids_product_leapfrog_368x224.jpg" width="184" alt="LeapFrog Preschool Game & Go" title="LeapFrog Preschool Game & Go" style="max-width: 184px;"></a>
+                                              </td>
+                                          </tr>
+                                        </table>
+
+                                        <!--[if mso]>
+                                          </td><td width="376" valign="middle" style="padding: 0; margin-bottom: 40px;">
+                                        <![endif]-->
+
+                                        <table class="column column-two-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 376px; display: inline-block; background-color: #CCE3DE; color: #2d2d2d; margin-bottom: 40px; padding: 24px 24px 0 0;" role="presentation">
+                                          <tr>
+                                              <td class="padding-ltr second" style="background-color: #CCE3DE; text-align: left;">
+                                                <h3 class="toyHeader" style="font-size: 20px; line-height: 28px; padding: 24px; font-weight: 700; color: #00798F; padding: 0 24px 0 0;">LeapFrog Preschool Game & Go</h3>
+                                                <p style="font-size: 16px; line-height: 22px; color: #2d2d2d; font-weight: 500; padding: 0 0 8px 0; margin: 0;">Packed with interactive mini-games, this handheld device teaches letters, numbers, and memory skills through fun stories and songs. Every challenge celebrates learning while keeping kids engaged and smiling on the go.</p>
+                                                <a style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 500; color: #00798F;" href="https://www.northmart.ca/toys-games/kids" target="_blank">Explore all toys for Little Hands &#10095;</a>
+                                              </td>
+                                          </tr>
+                                        </table>
+
+                                        <!--[if mso]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                        <![endif]-->
+
+                                    </td>
+                                  </tr>
+
+                              </table>
+                            </td>
+                        </tr>
+                      <!-- END TWO COLUMNS FLUID/HYBRID 100% RESPONSIVE WIDTH + MSO -->
+
+                      <!-- START CTA BUTTON SECTION -->
+                      <tr>
+                        <td  align="center" style="padding: 0 0 40px 0;"> <!-- align & padding -->
+                          
+                            <!--[if mso]>
+                              <table width="600" align="center" style="mso-background-color: #CCE3DE; border-spacing: 0; bgcolor: #CCE3DE !important; background: #CCE3DE !important;" role="presentation">
+                                <tr>
+                                  <td width="600" valign="top" style="padding: 0 0 40px 0; margin-bottom: 40px !important"
+                            <![endif]-->
+
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+
+                              <tr>
+                                <td align="center" bgcolor="007576" style="color: #fafafa; background-color: #00798F;">
+                                  <a class="btn" href="https://www.northmart.ca/flyers" target="_blank" style="font-size: 20px; font-weight: 700; letter-spacing: 0.5px; text-decoration: none !important; color: #fafafa; background-color: #007576; border: 1px solid #00798F; padding: 16px 24px 12px 24px; display: inline-block;">Explore all toys! &#10095;</a>
+                                </td>
+                              </tr>
+
+                            </table>
+
+                            <!-- [if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            -->
 
                         </td>
-                    </tr>
+                      </tr>
+                      <!-- END CTA BUTTON SECTION -->
 
-                    <tr>
-                      <td class="column-wrapper" style="padding: 32px 0; font-size: 0; text-align: left;"> <!-- Column Wrapper (media query padding) -->
-
-                        <!--[if mso]>
-                            <table width="100%" style="border-spacing: 0;" role="presentation">
-                            <tr>
-                            <td width="200" valign="middle" style="padding: 0;">
-                        <![endif]-->
-
-                        <table class="column column-one-third" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 200px; display: inline-block;" role="presentation"> <!-- Column (300px width) -->
-                            <tr>
-                              <td class="padding" style="padding: 20px;"> <!-- Padding (around content) -->
-
- <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> <!-- Content Styling -->
-                                      <tr>
-                                          <td style="">
-                                            <a href="https://example.com/12" target="_blank">
-                                                <img src="img/kids_product_rhino-building_368x224.jpg" alt="" class="one-third-col-img" width="184" style="max-width: 184px; border: 0; box-shadow: inset 0 0 0 2px #00798f;">
-                                            </a>
-                                          </td>
-                                      </tr>
-                                    </table>
-
-                              </td>
-                            </tr>
-                        </table>
-
-                        <!--[if mso]>
-                            </td><td width="400" valign="middle" style="padding: 0;">
-                        <![endif]-->
-
-                        <table class="column column-two-third" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 400px; display: inline-block;" role="presentation"> <!-- Column (400px width) -->
-                            <tr>
-                              <td class="padding" style="padding: 0px;"> <!-- Padding (around content) -->
-
-                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> <!-- Content Styling -->
-                                    <tr>
-                                        <td style="vertical-align: middle; padding: 0 10px;">
-                                          <div class="darkmode-transparent gmail-blend-screen">
-                                              <div class="darkmode-transparent gmail-blend-difference">
-                                                <h3 style="font-size: 16px; line-height: 20px; color: #2d2d2d; letter-spacing: .2px; font-weight: 300; margin: 0;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 28px; font-weight: 700; color: #00798F; ">Rhino Construction Building Machines</span><br />
-                                                  Hands-on fun that builds skills! These bright tractors strengthen fine motor abilities, teach cause and effect, and spark a love for creative problem-solving through constructive play. </h3>
-                                              </div>
-                                          </div>
-                                        </td>
-                                    </tr>
-                                  </table>
-
-                              </td>
-                            </tr>
-                        </table>
-
-                        <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
-                        <![endif]-->
-
+                    <!--[if mso]>
                       </td>
-                    </tr>
+                      </tr>
+                      </table>
+                    <![endif]-->
 
-                    <tr>
-                      <td class="column-wrapper" style="padding: 24px; font-size: 0; text-align: left;"> <!-- Column Wrapper (media query padding) -->
-
-                        <!--[if mso]>
-                            <table width="100%" style="border-spacing: 0;" role="presentation">
-                            <tr>
-                            <td width="184" valign="middle" style="padding: 0;">
-                        <![endif]-->
-
-                        <table class="column column-one-third" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 184px; display: inline-block;" role="presentation"> 
-                            <tr>
-                              <td  style="padding: 0;"> <!-- Padding (around content) -->
-
-                                  <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> <!-- Content Styling -->
-                                    <tr>
-                                        <td>
-                                          <a href="https://example.com/12" target="_blank">
-                                              <img src="img/kids_product_leapfrog_368x224.jpg" alt="" class="one-third-col-img" width="184" style="max-width: 184px; border: 0; box-shadow: inset 0 0 0 2px #00798f;">
-                                          </a>
-                                        </td>
-                                    </tr>
-                                  </table>
-
-                              </td>
-                            </tr>
-                        </table>
-
-                        <!--[if mso]>
-                            </td><td width="400" valign="top" style="padding: 0;">
-                        <![endif]-->
-
-                        <table class="column column-two-third" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 400px; display: inline-block;" role="presentation"> <!-- Column (400px width) -->
-                            <tr>
-                              <td class="padding" style="padding: 0px;"> <!-- Padding (around content) -->
-
-                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> <!-- Content Styling -->
-                                    <tr>
-                                        <td style="vertical-align: top; padding: 0;">
-                                          <div class="darkmode-transparent gmail-blend-screen">
-                                              <div class="darkmode-transparent gmail-blend-difference">
-                                                <h3 style="font-size: 16px; line-height: 20px; color: #2d2d2d; letter-spacing: .2px; font-weight: 300; margin: 0;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 28px; font-weight: 700; color: #00798F;">LeapFrog Preschool Game & Go</span></h3>
-                                                  <p style="font-size: 16px; line-height: 20px; color: #2d2d2d; letter-spacing: .2px; font-weight: 300; margin: 0;">Packed with interactive mini-games, this handheld device teaches letters, numbers, and memory skills through fun stories and songs. Every challenge celebrates learning while keeping kids engaged and smiling on the go.</p>
-                                              </div>
-                                          </div>
-                                        </td>
-                                    </tr>
-                                  </table>
-
-                              </td>
-                            </tr>
-                        </table>
-
-                        <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
-                        <![endif]-->
-
-                      </td>
-                    </tr>
-
-                    <!-- START CTA BUTTON SECTION -->
-                    <tr>
-                      <td  align="center" style="padding: 0 0 40px 0;"> <!-- align & padding -->
-                        
-                          <!--[if mso]>
-                            <table width="600" align="center" style="mso-background-color: #fafafa; border-spacing: 0; bgcolor: fafafa !important; background: #fafafa !important;" role="presentation">
-                              <tr>
-                                <td width="600" valign="top" style="padding: 0 0 40px 0;"
-                          <![endif]-->
-
-                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-
-                            <tr>
-                              <td align="center" bgcolor="007576" style="color: #fafafa; background-color: #00798F;">
-                                <a class="btn" href="https://www.northmart.ca/flyers" target="_blank" style="font-size: 20px; font-weight: 700; letter-spacing: 0.5px; text-decoration: none !important; color: #fafafa; background-color: #007576; border: 1px solid #00798F; padding: 16px 24px 12px 24px; display: inline-block;">Explore all toys! &#10095;</a>
-                              </td>
-                            </tr>
-
-                          </table>
-
-                          <!-- [if mso]>
-                                </td>
-                              </tr>
-                            </table>
-                          -->
-
-                      </td>
-                    </tr>
-                    <!-- END CTA BUTTON SECTION -->
-
-                  </table>
-              </td>
-            </tr>
-        <!-- END TWO THIRDS COLUMNS -->
-        <!-- BODY TEXT SECTION END -->
-
-
-        <!-- INTERNAL BANNER ( CONTEST OR PROMOTION ) START -->
-        <tr>
-          <td align="center" style="padding: 0 0 40px;">
-
-            <!--[if mso]>
-              <table width="600" align="center" style="border-spacing: 0;" role="presentation">
-                <tr>
-                  <td width="600" valign="top" style="padding: 0;"
-            <![endif]-->
-
-            <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0; text-align: center;" role="presentation">
-              <tr>
-                <td style="text-align: center; padding: 0; font-size: 0;">
-                  <img src="img/christmas_we-ve_got_it_400x124.png" alt="We've Got It" class="wevegotit" title="We've Got It" width="400" border="0" style="width: 100%; max-width: 400px;"> 
+                    </table>
                 </td>
               </tr>
-            </table>
-
-            <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-            <![endif]-->
-
-          </td>
-        </tr>
-        <!-- INTERNAL BANNER ( CONTEST OR PROMOTION ) END -->
+          <!-- END TWO THIRDS COLUMNS -->
+        <!-- BODY TEXT SECTION END -->
 
         <!-- START northernstores.ca link section -->
         <tr>
-          <td style="margin: 0 20px 20px 20px !important;">
+          <td style="margin: 0 24px 24px 24px !important;">
 
             <!--[if mso]>
-              <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+              <table width="600" align="center" bgcolor="#faffa" style="border-spacing: 0; background-color: #fafafa !important;" role="presentation">
                 <tr>
-                  <td width="600" valign="top" style="padding: 0;"
+                  <td width="600" valign="top" style="padding: 0; background-color: #fafafa !important;"
             <![endif]-->
 
-            <table width="100%" align="center" border="0" cellspacing="0" style="border-spacing: 0; margin: 30px 0 30px 0;" role="presentation">
+            <table class="connect" width="100%" align="center" border="0" cellspacing="0" style="border-spacing: 0; margin: 30px 0 30px 0; background-color: #fafafa !important;" role="presentation">
               <tr>
-                <td style="text-align: center; padding: 0 20px;">
+                <td style="text-align: center; padding: 0 24px; background-color: #fafafa !important;">
                   <a href="https://www.northmart.ca/" target="_blank">
                     <h2 class="northmartLink" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; line-height: 1; text-decoration: none; color: #005cab; display: inline-block;">northernstores.ca</h2>
                   </a>
@@ -887,7 +863,7 @@
 
 
               <tr>
-                <td style="margin: 0 20px 20px 20px !important; padding: 30px 0 30px 0;">
+                <td style="margin: 0 24px 24px 24px !important; padding: 32px 0 32px 0;">
       
                   <!--[if mso]>
                     <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse;" role="presentation">
@@ -954,7 +930,7 @@
               </tr>
       
               <tr>
-                <td align="center" style="padding: 20px 0 30px 0;">
+                <td align="center" style="padding: 24px 0 32px 0;">
 
                     <a href="https://www.northmart.ca/" target="_blank">
                       <img src="img/northernNorthMart-rev_575x90.png" alt="Northern/NorthMart logo" title="Northern/NorthMart logo" width="288" border="0" style="width: 100%; max-width: 300px;">
@@ -964,7 +940,7 @@
               </tr>
 
               <tr>
-                <td style="padding: 0 20px 0 20px;">
+                <td style="padding: 0 24px 0 24px;">
 
                     <p style="font-size: 14px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center;">You have received this email because you are a valued Northern/NorthMart customer. If you no longer wish to receive these infrequent emails, please <a style="color: #fafafa; text-decoration: underline !important;" href="http://ct.e.northmart.ca/extended/page/ahnmdffo/##unsubscribecode##/">unsubscribe.</a></p>
 
@@ -972,9 +948,9 @@
               </tr>
 
               <tr>
-                <td style="padding: 0 20px 0 20px;">
+                <td style="padding: 0 24px 0 24px;">
 
-                    <p style="font-size: 16px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 0; text-align: center; padding: 30px 20px 0 20px;">
+                    <p style="font-size: 16px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 0; text-align: center; padding: 32px 24px 0 24px;">
                       <a style="color: #fafafa; text-decoration: underline;" href="https://www.northmart.ca/legal-privacy" target="_blank">Privacy Policy</a> &nbsp; | &nbsp;
                       
                       <a style="color: #fafafa; text-decoration: underline;" href="https://www.northmart.ca/contact-us" target="_blank">Contact us</a></p>
@@ -982,7 +958,7 @@
               </tr>
 
               <tr>
-                <td style="padding: 0 20px 0 20px;">
+                <td style="padding: 0 24px 0 24px;">
 
                     <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center; padding: 20px 20px 0 20px;">
                       The North West Company<br />
@@ -998,17 +974,17 @@
               <tr>
                 <td align='center' style="padding: 0;">
                   <a href="https://www.northmart.ca/shopCanadian" target="_blank">
-                    <img style="padding: 10px 0 20px 0;" src="img/canada.png" width="135" border="0" alt="Canadian Proud" title="Canadian Proud">
+                    <img style="padding: 16px 0 24px 0;" src="img/canada.png" width="135" border="0" alt="Canadian Proud" title="Canadian Proud">
                   </a>
                 </td>
               </tr>
 
               <tr>
-                <td style="padding: 0 20px 0 20px;">
+                <td style="padding: 0 24px 0 24px;">
 
                     <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 10px; text-align: center; padding: 0 20px 10px 20px;">© 2025 The North West Company. All rights reserved</p>
 
-                    <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center;">Please do not reply to this email as this email address is not being monitored for incoming messages.</p>
+                    <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 24px; text-align: center;">Please do not reply to this email as this email address is not being monitored for incoming messages.</p>
 
                 </td>
               </tr>
